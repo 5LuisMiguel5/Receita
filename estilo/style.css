@@ -1,0 +1,334 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    padding-bottom: 10px;
+    overflow-x: hidden;
+}
+
+header > .imagem > img{
+    max-width: 759px;
+    width: 100%;
+
+}
+
+ul > li{
+    font-family: Outfit, sans-serif;
+}
+
+ol > li{
+    font-family: Outfit, sans-serif;
+}
+
+p{
+    font-family: Outfit, sans-serif;
+}
+
+main > h1{
+    font-family: Young Serif, serif;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px
+    
+}
+
+h2{
+    font-size: 30px;
+    color: rgb(141, 68, 22);
+    font-family: Young Serif, serif;
+}
+
+ul li::marker{
+    color: rgb(141, 68, 22);
+}
+
+ol li::marker{
+    color: rgb(141, 68, 22);
+    font-weight: bold;
+    text-align: left;
+}
+
+main > .para1{
+    text-align: center;
+    padding: 10px 30px 30px 30px;
+    
+}
+
+.primeira{
+    margin: 20px auto;
+    width: 80vw;
+    background-color: rgb(250, 239, 246);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.primeira > h2{
+    font-family: Outfit, sans-serif;
+    font-size: 25px;
+    padding: 10px;
+    color: #6e2649;
+}
+
+.primeira > ul{
+    list-style-position: inside;
+}
+
+.primeira > ul > li{
+    color: black;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.primeira > ul > li::marker{
+    color: #6e2649;
+}
+
+.segunda{
+    margin: 20px auto;
+    width: 80vw;
+    padding: 20px;
+    border: solid rgb(255, 210, 181);
+}
+
+.segunda > ul{
+    list-style-position: inside;
+}
+
+.terceira{
+    margin: 20px auto;
+    width: 80vw;
+    padding: 20px;
+    border: solid rgb(255, 210, 181);
+}
+
+.terceira > ol{
+    list-style-position: inside;
+}
+
+.terceira > ol > li{
+    margin-bottom: 20px;
+}
+
+#nutri{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+.pl1{
+    background-color: rgb(255, 148, 77);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    border-radius: 4px 0px 0px 0px;
+}
+.pc1{
+    background-color: rgb(255, 148, 77);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 10px;
+    border-radius: 0px 4px 0px 0px;
+    text-align: end;
+}
+
+.pl2{
+    background-color: rgb(247, 176, 129);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+}
+.pc2{
+    background-color: rgb(247, 176, 129);
+    padding-top: 2px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    text-align: end;
+}
+
+.pl3{
+    background-color: rgb(255, 148, 77);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+}
+.pc3{
+    background-color: rgb(255, 148, 77);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 10px;
+    text-align: end;
+}
+
+.pl4{
+    background-color: rgb(247, 176, 129);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    border-radius: 0px 0px 0px 4px;
+}
+.pc4{
+    background-color: rgb(247, 176, 129);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 0px 0px 4px 0px;
+    padding-right: 10px;
+    text-align: end;
+}
+
+aside{
+    margin: 20px auto;
+    width: 80vw;
+    padding: 20px;
+    border: solid rgb(255, 210, 181);
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        background-color: #f3e5d8;
+    }
+    .geral{
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -0%);
+        border-radius: 40px;
+        max-width: 700px;
+        width: 100%;
+        background-color: white;
+        
+        
+        
+    }
+    
+    header{
+        .imagem{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    header > .imagem > img{
+        border-radius: 40px;
+        margin-top: 20px;
+        width: 90%;
+    }
+
+
+    main{
+        max-width: 612px;
+        width: 100%;
+    }
+
+    main > h1{
+        padding-left:  100px;
+    }
+
+    main > .para1{
+        padding-left:  120px;
+    }
+
+
+    aside{
+        margin: 20px auto;
+        border-radius: 10px;
+        background-color: rgb(250, 205, 175);
+        border: solid rgb(250, 205, 175);
+        max-width: 612px;
+        width: 100%;
+        
+    }
+
+    .primeira{
+        display: block;
+        margin: 20px 20px 20px 20px;
+        max-width: 612px;
+        width: 100%;
+    }
+
+    .segunda{
+        margin: 20px 20px 20px 20px;
+        border-radius: 10px;
+        background-color: rgb(255, 210, 181);
+        border: solid rgb(255, 210, 181);
+        max-width: 612px;
+        width: 100%;
+    }
+
+    .terceira{
+        margin: 20px 20px 20px 20px;
+        border-radius: 10px;
+        background-color: rgb(255, 210, 181);
+        border: solid rgb(255, 210, 181);
+        max-width: 612px;
+        width: 100%;
+    }
+
+    #nutri{
+        margin: auto;
+    }
+    .pl1{
+        background-color: rgb(255, 148, 77);
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        border-radius: 4px 0px 0px 0px;
+    }
+    .pc1{
+        background-color: rgb(255, 148, 77);
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-right: 10px;
+        border-radius: 0px 4px 0px 0px;
+        text-align: end;
+    }
+
+    .pl2{
+        background-color: rgb(247, 176, 129);
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+    }
+    .pc2{
+        background-color: rgb(247, 176, 129);
+        padding-top: 2px;
+        padding-right: 10px;
+        padding-bottom: 2px;
+        text-align: end;
+    }
+
+    .pl3{
+        background-color: rgb(255, 148, 77);
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+    }
+    .pc3{
+        background-color: rgb(255, 148, 77);
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-right: 10px;
+        text-align: end;
+    }
+
+    .pl4{
+        background-color: rgb(247, 176, 129);
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        border-radius: 0px 0px 0px 4px;
+    }
+    .pc4{
+        background-color: rgb(247, 176, 129);
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border-radius: 0px 0px 4px 0px;
+        padding-right: 10px;
+        text-align: end;
+    }
+}
